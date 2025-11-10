@@ -64,16 +64,12 @@ The Hugging Face `BAAI/bge-large-en-v1.5` model was selected because:
 
 1. **Low Similarity Handling**  
    If no cosine similarity exceeds 0.6, the system gracefully shows a fallback suggestion (top product by default) instead of returning empty results.
-
 2. **Empty Query Validation**  
    The input is validated to ensure non-empty, meaningful text before embedding.
-
 3. **API Resilience**  
    Errors from the Hugging Face API (rate limit, timeout) are caught with retry or fallback logic.
-
 4. **Deterministic Ranking**  
    Products with identical scores are secondarily sorted alphabetically for stable results.
-
 5. **Scalability Consideration**  
    FAISS and caching ensure performance even for repeated queries or degraded API conditions.
 
