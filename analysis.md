@@ -89,7 +89,7 @@ Originally, OpenAI’s `text-embedding-ada-002` was suggested, but since **OpenA
 
 In production, this system is designed to evolve into a full **Retrieval-Augmented Generation (RAG)** architecture for advanced style-driven recommendations or conversational shopping agents.
 
-![High Level Design](assets\rag_extension.png)
+![High Level Design](assets/rag_extension.png)
 
 ---
 
